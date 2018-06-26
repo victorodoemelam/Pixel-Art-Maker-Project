@@ -71,4 +71,8 @@ input[type=number] {
   font-weight: 400;
   font-style: normal
   }
+
+.input{
+ padding: 10px;
+}
   
