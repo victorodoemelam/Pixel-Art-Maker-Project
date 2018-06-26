@@ -9,6 +9,9 @@ h1 {
     font-size: 70px;
     margin: 0.2em;
     padding-top: 10px;
+    -webkit-box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
+    -moz-box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
+    box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
 }
 
 h2 {
