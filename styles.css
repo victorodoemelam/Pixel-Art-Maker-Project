@@ -37,11 +37,11 @@ box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
 }
 
 tr {
-    height: 20px;
+    height: 25px;
 }
 
 td {
-    width: 20px;
+    width: 25px;
 }
 
 input[type=number] {
@@ -58,12 +58,12 @@ input[type=number] {
   border-radius: 100px;
   border: 0.5px solid rgba(0%,0%,0%,0.2);
   border-width: 0.5px 0.5px 0.5px 0.5px;
-  padding: 4px 22px 5px 22px;
+  padding: 10px 22px 10px 22px;
   box-shadow: 0px 1px 1px rgba(0%,0%,0%,0.6),0px 0px 5px rgba(255,255,255,1),0px 1px 0px 3px rgba(0,0,0,0.2),inset 0px 1px 0px rgba(255,255,255,1);
   color: #000000;
-  font-size: 16px;
+  font-size: 13px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal
   }
   
