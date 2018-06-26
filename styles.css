@@ -8,6 +8,7 @@ h1 {
     font-family: 'Lilita One', cursive;
     font-size: 70px;
     margin: 0.2em;
+    padding-top: 10px;
 }
 
 h2 {
@@ -46,3 +47,23 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+.button {
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(180deg,#f9f9f9 0%,#e0e0e0 100%);
+  border-radius: 100px;
+  border: 0.5px solid rgba(0%,0%,0%,0.2);
+  border-width: 0.5px 0.5px 0.5px 0.5px;
+  padding: 4px 22px 5px 22px;
+  box-shadow: 0px 1px 1px rgba(0%,0%,0%,0.6),0px 0px 5px rgba(255,255,255,1),0px 1px 0px 3px rgba(0,0,0,0.2),inset 0px 1px 0px rgba(255,255,255,1);
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: normal
+  }
+  
