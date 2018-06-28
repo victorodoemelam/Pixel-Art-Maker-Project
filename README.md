@@ -1,5 +1,5 @@
 # Pixel-Art-Maker-Project
-This is my Google Africa Challenge Scholarship: Front-End (Final Project).
+This is my Google Africa Challenge Scholarship: Front-End (#7DaysofCode Project).
 Below is the link to the Live Project!
 _____________________________________
 https://victorodoemelam.github.io/Pixel-Art-Maker-Project/
