@@ -17,10 +17,10 @@ function makeGrid(x, y){
     $('tr').remove();
 
     //Create Grid
-    for (var i = 1; i <= x; i++){
-        $('#pixelCanvas').append('<tr id=row' + i + '></tr>');
-        for (var j = 1; j <= y; j++){
-            $('#row' + i).append('<td></td>');
+    for (var a = 1; a <= x; a++){
+        $('#pixelCanvas').append('<tr id=row' + a + '></tr>');
+        for (var b = 1; b <= y; b++){
+            $('#row' + a).append('<td></td>');
         }
     }
     //Add Color to Grid cell
@@ -35,8 +35,3 @@ function makeGrid(x, y){
         }
     })
 }
-
-
-
-
-
