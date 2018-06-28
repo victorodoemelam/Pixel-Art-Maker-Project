@@ -1,35 +1,109 @@
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     text-align: center;
-    background: rgb(226,228,228);
-    background: radial-gradient(circle, rgba(226,228,228,1) 10%, rgba(169,169,169,1) 90%);
     font-family: 'Montserrat', sans-serif;
-    
+
+    background-image:
+    radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+}
+
+.pixelmaker{
+  padding:2rem;
+  width:50rem;
+  margin:0 auto;
+  border-radius:1rem;
+  position: relative;
+  background:white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow:0 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.pixelmaker form input,
+.pixelmaker textarea
+{
+  width:20%;
+  display: inline-block;
+  margin:10px 0;
+  padding:10px;
+  border:0;
+  font-size: 1.2rem;
+  background:#F7F7F7;
+  outline:0;
+}
+
+.pixelmaker form button {
+    background:#ffc600;
+    border:0;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 14px;
+    cursor:pointer;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.pixelmaker form button:hover{
+    background:#F3C010;
 }
 
 h1 {
-    font-family: 'Lilita One', cursive;
-    font-size: 70px;
-    margin: 0.2em;
-    padding-top: 10px;
-    -webkit-box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
-    -moz-box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
-    box-shadow: 3px 4px 27px -4px rgba(186,169,186,1);
+  font-family: 'Pacifico', cursive;
+  width:calc(100% + 4rem);
+  margin: -2rem 0 1rem -2rem;
+  padding:0.5rem;
+  background: #ffc600;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 100;
+  text-shadow:3px 3px 0 #F3C010;
+  
+}
+
+.header{
+    width:calc(100% + 4rem);
+    margin: -2rem 0 0rem -2rem;
+    padding:0.5rem;
+    background: #ffc600;
+    border-bottom: 5px solid #F3C010;
+    text-align: center;
 }
 
 h2 {
     margin: 1em 0 0.25em;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
+    font-weight: 150;
+    color: #000000;
 }
 
 h2:first-of-type {
-    margin-top: 0.5em;
+    margin-top: 0.5em;   
+}
+
+input[type="number"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 6em;
 }
 
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 table {
@@ -37,8 +111,8 @@ table {
     margin: 0 auto;
 
     -webkit-box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
--moz-box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
-box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
+    -moz-box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
+    box-shadow: 9px 14px 30px -9px rgba(0,0,0,0.41);
 }
 
 tr {
@@ -48,31 +122,3 @@ tr {
 td {
     width: 25px;
 }
-
-input[type=number] {
-    width: 6em;
-}
-
-.button {
-  backface-visibility: hidden;
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
-  white-space: nowrap;
-  background: linear-gradient(180deg,#f9f9f9 0%,#e0e0e0 100%);
-  border-radius: 100px;
-  border: 0.5px solid rgba(0%,0%,0%,0.2);
-  border-width: 0.5px 0.5px 0.5px 0.5px;
-  padding: 10px 22px 10px 22px;
-  box-shadow: 0px 1px 1px rgba(0%,0%,0%,0.6),0px 0px 5px rgba(255,255,255,1),0px 1px 0px 3px rgba(0,0,0,0.2),inset 0px 1px 0px rgba(255,255,255,1);
-  color: #000000;
-  font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-style: normal
-  }
-
-.input{
- padding: 10px;
-}
-  
